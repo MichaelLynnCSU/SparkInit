@@ -31,9 +31,7 @@ public class LayoutController {
         gson = new Gson();
 
         get("/layout", (request, response) -> {
-            String htmlFile = "/layout.js";
-           String test =  new String(Files.readAllBytes(Paths.get(getClass().getResource(htmlFile).toURI())), StandardCharsets.UTF_8);
-           return test;
+           return "test";
         });
 
     }
