@@ -4,9 +4,6 @@ import com.google.gson.Gson;
 import edu.csu2017fa314.T30.Model.Itinerary.Data.DataService;
 import org.apache.velocity.app.VelocityEngine;
 
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Properties;
 
 import static spark.Spark.*;
