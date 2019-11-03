@@ -1,9 +1,9 @@
 package edu.csu2017fa314.T30;
 import edu.csu2017fa314.T30.Controller.LayoutController;
 
-import static spark.Spark.get;
-import static spark.Spark.port;
 import java.sql.SQLException;
+
+import static spark.Spark.*;
 
 
 public class TripCo
@@ -44,7 +44,7 @@ public class TripCo
 
 
    public static void main(String[] args) throws SQLException {
-
+      staticFileLocation("/public");
       //configure port
       port(getHerokuAssignedPort());
 
